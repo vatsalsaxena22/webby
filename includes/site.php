@@ -10,7 +10,7 @@ function site_settings(PDO $pdo): array
         'logo_path' => SITE_LOGO_PATH, 'logo_text' => SITE_LOGO_TEXT,
         'phone' => CONTACT_PHONE, 'email' => CONTACT_EMAIL, 'address' => '',
         'whatsapp' => '', 'facebook' => '', 'instagram' => '', 'youtube' => '',
-        'linkedin' => '', 'pinterest' => '', 'github' => '',
+        'linkedin' => '', 'pinterest' => '', 'github' => '', 'twitter' => '', 'x' => '',
     ];
     try {
         foreach ($pdo->query('SELECT setting_key, setting_value FROM site_settings') as $row) {
@@ -30,11 +30,14 @@ function site_social_links(array $settings): array
         'linkedin' => ['LinkedIn', 'fa-brands fa-linkedin-in'],
         'pinterest' => ['Pinterest', 'fa-brands fa-pinterest-p'],
         'github' => ['GitHub', 'fa-brands fa-github'],
+        'twitter' => ['X', 'fa-brands fa-x-twitter'],
     ];
 
     $links = [];
     foreach ($socials as $key => [$label, $icon]) {
-        $url = trim($settings[$key] ?? '');
+        $url = trim($key === 'twitter'
+            ? (($settings['twitter'] ?? '') ?: ($settings['x'] ?? ''))
+            : ($settings[$key] ?? ''));
         $scheme = strtolower((string) parse_url($url, PHP_URL_SCHEME));
         if ($url !== '' && filter_var($url, FILTER_VALIDATE_URL) && in_array($scheme, ['http', 'https'], true)) {
             $links[$key] = ['label' => $label, 'icon' => $icon, 'url' => $url];

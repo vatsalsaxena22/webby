@@ -7,6 +7,81 @@ body {
     font-family: Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
+.site-page-hero {
+    padding-top: clamp(3.5rem, 7vw, 6.5rem);
+}
+
+.site-page-title {
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', Inter, ui-sans-serif, sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 1.08;
+}
+
+.site-page-title--home {
+    font-size: clamp(3rem, 6.5vw, 5.25rem);
+    line-height: 1;
+}
+
+.site-button {
+    display: inline-flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    transition: color 200ms, background-color 200ms, border-color 200ms, box-shadow 200ms, transform 200ms;
+}
+
+.site-button--nav {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .site-button--nav {
+        display: inline-flex;
+    }
+}
+
+.site-button:focus-visible {
+    outline: 2px solid rgb(var(--brand-rgb));
+    outline-offset: 3px;
+}
+
+.site-button--primary {
+    background-color: color-mix(in srgb, rgb(var(--brand-rgb)) 88%, black);
+    color: #fff;
+    box-shadow: 0 10px 24px rgb(15 23 42 / 10%);
+}
+
+.site-button--primary:hover {
+    background-color: rgb(var(--brand-rgb));
+    transform: translateY(-1px);
+}
+
+.site-button--secondary {
+    border: 1px solid #e2e8f0;
+    background-color: rgb(255 255 255 / 90%);
+    color: #334155;
+}
+
+.site-button--secondary:hover {
+    border-color: #94a3b8;
+    background-color: #fff;
+}
+
+.site-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+}
+
 @media (max-width: 639px) {
     body:has(.contact-action-bar) {
         padding-bottom: calc(5rem + env(safe-area-inset-bottom));
@@ -78,4 +153,14 @@ html[data-theme='dark'] .text-slate-800 {
 html[data-theme='dark'] .text-slate-700,
 html[data-theme='dark'] .text-slate-600 {
     color: #cbd5e1;
+}
+
+html[data-theme='dark'] .site-page-title {
+    color: #f8fafc;
+}
+
+html[data-theme='dark'] .site-button--secondary {
+    border-color: #334155;
+    background-color: #111c2e;
+    color: #e2e8f0;
 }

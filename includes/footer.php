@@ -53,7 +53,7 @@ $footerServices = [
                 </div>
 
                 <a href="<?= e(app_url('/pages/contact.php')); ?>"
-                    class="group inline-flex min-h-12 shrink-0 items-center justify-center gap-3 rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-950/30 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+                    class="site-button site-button--primary group shrink-0">
                     Start a project
                     <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true"></i>
                 </a>
@@ -159,7 +159,7 @@ $footerServices = [
                 <span class="text-slate-600">Made for the modern web</span>
             </div>
 
-            <a href="<?= e(app_url('/')); ?>"
+            <a href="#top"
                 class="inline-flex items-center gap-2 font-medium text-slate-400 transition hover:text-white">
                 Back to top
                 <i class="fa-solid fa-arrow-up text-[10px]" aria-hidden="true"></i>

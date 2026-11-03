@@ -9,7 +9,7 @@ include __DIR__ . '/../includes/navbar.php';
 
 <main class="overflow-hidden bg-white">
     <!-- Hero -->
-    <section class="relative isolate overflow-hidden bg-white pt-32 sm:pt-36 lg:pt-44">
+    <section class="site-page-hero relative isolate overflow-hidden bg-white">
         <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
             <div class="absolute -left-40 top-12 h-96 w-96 rounded-full bg-brand-100/70 blur-3xl"></div>
             <div class="absolute -right-36 top-28 h-[28rem] w-[28rem] rounded-full bg-cyan-100/60 blur-3xl"></div>
@@ -23,7 +23,7 @@ include __DIR__ . '/../includes/navbar.php';
                     A little about Webby
                 </span>
 
-                <h1 class="mt-6 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
+                <h1 class="site-page-title mt-6">
                     Good ideas deserve
                     <span class="block bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 bg-clip-text text-transparent">great digital experiences.</span>
                 </h1>
@@ -34,12 +34,12 @@ include __DIR__ . '/../includes/navbar.php';
 
                 <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
                     <a href="<?= e(app_url('/pages/contact.php')); ?>"
-                        class="group inline-flex min-h-12 items-center gap-3 rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/20 transition duration-300 hover:-translate-y-1 hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2">
+                        class="site-button site-button--primary group">
                         Let’s work together
                         <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true"></i>
                     </a>
                     <a href="<?= e(app_url('/pages/services.php')); ?>"
-                        class="inline-flex min-h-12 items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-white">
+                        class="site-button site-button--secondary">
                         Explore our services
                     </a>
                 </div>
@@ -259,7 +259,7 @@ include __DIR__ . '/../includes/navbar.php';
                     Let’s talk about your idea, your goals and how we can build something useful together.
                 </p>
                 <a href="<?= e(app_url('/pages/contact.php')); ?>"
-                    class="group mt-8 inline-flex min-h-12 items-center gap-3 rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-950/30 transition duration-300 hover:-translate-y-1 hover:bg-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+                    class="site-button site-button--primary group mt-8">
                     Start a project
                     <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1" aria-hidden="true"></i>
                 </a>

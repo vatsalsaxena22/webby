@@ -13,7 +13,7 @@ include __DIR__ . '/../includes/navbar.php';
 
 <main class="overflow-hidden bg-white">
     <!-- Hero -->
-    <section class="relative isolate bg-white pt-32 sm:pt-36 lg:pt-44">
+    <section class="site-page-hero relative isolate bg-white">
         <div class="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
             <div class="absolute -left-36 top-8 h-96 w-96 rounded-full bg-brand-100/70 blur-3xl"></div>
             <div class="absolute -right-36 top-12 h-[28rem] w-[28rem] rounded-full bg-cyan-100/50 blur-3xl"></div>
@@ -26,7 +26,7 @@ include __DIR__ . '/../includes/navbar.php';
                         <span class="h-2 w-2 rounded-full bg-brand-500"></span>
                         Get in touch
                     </span>
-                    <h1 class="mt-6 max-w-3xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-950 sm:text-5xl lg:text-7xl">
+                    <h1 class="site-page-title mt-6 max-w-3xl">
                         Let's build something <span class="text-brand-500">meaningful.</span>
                     </h1>
                 </div>
@@ -184,7 +184,7 @@ include __DIR__ . '/../includes/navbar.php';
                                     class="w-full resize-y rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm leading-6 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10"></textarea>
                             </div>
 
-                            <button type="submit" id="submit-button" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-slate-950 px-6 py-4 text-sm font-bold text-white shadow-lg shadow-slate-950/10 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-600 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0">
+                            <button type="submit" id="submit-button" class="site-button site-button--primary mt-6 w-full">
                                 <span id="submit-text">Send Message</span>
                                 <i id="submit-icon" class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
                             </button>

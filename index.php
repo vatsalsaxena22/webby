@@ -12,14 +12,14 @@ include __DIR__ . '/includes/navbar.php';
 <main class="overflow-hidden bg-white text-slate-950">
 
     <!-- HERO -->
-    <section class="relative isolate">
+    <section class="site-page-hero relative isolate">
         <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
             <div class="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:56px_56px] opacity-35 [mask-image:linear-gradient(to_bottom,black,transparent_88%)]"></div>
             <div class="absolute -right-40 top-16 h-[28rem] w-[28rem] rounded-full bg-brand-100/70 blur-[110px]"></div>
             <div class="absolute -left-40 top-72 h-72 w-72 rounded-full bg-cyan-100/60 blur-[100px]"></div>
         </div>
 
-        <div class="mx-auto grid max-w-7xl items-center gap-14 px-4 pb-20 pt-32 sm:px-6 sm:pb-24 sm:pt-36 lg:grid-cols-[1.02fr_.98fr] lg:gap-10 lg:px-8 lg:pb-28 lg:pt-40">
+        <div class="mx-auto grid max-w-7xl items-center gap-14 px-4 pb-20 sm:px-6 sm:pb-24 lg:grid-cols-[1.02fr_.98fr] lg:gap-10 lg:px-8 lg:pb-28">
             <div class="relative z-10">
                 <div class="mb-7 inline-flex items-center gap-2.5 rounded-full border border-slate-200 bg-white/85 px-3.5 py-2 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur">
                     <span class="relative flex size-2">
@@ -29,7 +29,7 @@ include __DIR__ . '/includes/navbar.php';
                     Digital partner for ambitious businesses
                 </div>
 
-                <h1 class="max-w-3xl font-display text-5xl font-extrabold leading-[.98] tracking-[-.055em] sm:text-6xl lg:text-7xl xl:text-[5.4rem]">
+                <h1 class="site-page-title site-page-title--home max-w-3xl">
                     Good ideas.<br>
                     <span class="text-brand-600">Thoughtfully</span><br>
                     built for growth.
@@ -41,12 +41,12 @@ include __DIR__ . '/includes/navbar.php';
 
                 <div class="mt-9 flex flex-col gap-3 sm:flex-row">
                     <a href="<?= e(app_url('/pages/contact.php')); ?>"
-                        class="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-slate-950/10 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-600">
+                        class="site-button site-button--primary group">
                         Let's talk about your project
                         <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true"></i>
                     </a>
                     <a href="<?= e(app_url('/pages/projects.php')); ?>"
-                        class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white/80 px-6 py-3.5 text-sm font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-white">
+                        class="site-button site-button--secondary">
                         Explore our work
                         <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
                     </a>
@@ -112,15 +112,7 @@ include __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
 
-                <div class="absolute -bottom-5 -left-3 rounded-2xl border border-slate-200 bg-white p-3.5 shadow-xl shadow-slate-900/10 sm:-left-7 sm:p-4">
-                    <div class="flex items-center gap-3">
-                        <span class="grid size-10 place-items-center rounded-xl bg-brand-50 text-brand-600"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
-                        <div>
-                            <p class="text-xs font-bold text-slate-950 sm:text-sm">Designed with purpose</p>
-                            <p class="mt-0.5 text-[10px] text-slate-500 sm:text-xs">Clear. Useful. Memorable.</p>
-                        </div>
-                    </div>
-                </div>
+                
                 <div aria-hidden="true" class="absolute -right-2 -top-5 -z-10 size-20 rounded-3xl border border-brand-200 sm:-right-5 sm:-top-7 sm:size-24"></div>
             </div>
         </div>
@@ -297,7 +289,7 @@ include __DIR__ . '/includes/navbar.php';
                         <h2 class="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Let's make your next digital project matter.</h2>
                         <p class="mt-5 max-w-xl text-sm leading-7 text-white/80 sm:text-base">Have a website to launch, a process to improve or an idea to explore? Let's talk.</p>
                     </div>
-                    <a href="<?= e(app_url('/pages/contact.php')); ?>" class="inline-flex min-h-12 items-center justify-center gap-3 self-start rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:bg-slate-100 lg:self-end">
+                    <a href="<?= e(app_url('/pages/contact.php')); ?>" class="site-button site-button--secondary self-start shadow-lg lg:self-end">
                         Start a conversation <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
                     </a>
                 </div>

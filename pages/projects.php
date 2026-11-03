@@ -27,7 +27,7 @@ include __DIR__ . '/../includes/navbar.php';
 
 <main class="overflow-hidden bg-white">
     <!-- Intro -->
-    <section class="relative isolate bg-white pt-32 sm:pt-36 lg:pt-44">
+    <section class="site-page-hero relative isolate bg-white">
         <div class="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
             <div class="absolute -left-36 top-12 h-96 w-96 rounded-full bg-brand-100/60 blur-3xl"></div>
             <div class="absolute -right-32 top-24 h-[30rem] w-[30rem] rounded-full bg-cyan-100/50 blur-3xl"></div>
@@ -41,7 +41,7 @@ include __DIR__ . '/../includes/navbar.php';
                         <span class="h-2 w-2 rounded-full bg-brand-500"></span>
                         Selected work
                     </div>
-                    <h1 class="mt-6 max-w-4xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-950 sm:text-5xl lg:text-7xl">
+                    <h1 class="site-page-title mt-6 max-w-4xl">
                         Thoughtful digital work.
                         <span class="block text-brand-500">Made to move business forward.</span>
                     </h1>
@@ -104,7 +104,7 @@ include __DIR__ . '/../includes/navbar.php';
                     <p class="relative mx-auto mt-3 max-w-md text-sm leading-7 text-slate-600">
                         We’re preparing our project showcase. In the meantime, tell us what you’d like to bring to life.
                     </p>
-                    <a href="<?= e(app_url('/pages/contact.php')); ?>" class="relative mt-7 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-brand-600/20 transition hover:-translate-y-0.5 hover:bg-brand-700">
+                    <a href="<?= e(app_url('/pages/contact.php')); ?>" class="site-button site-button--primary relative mt-7">
                         Start a project <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -198,7 +198,7 @@ include __DIR__ . '/../includes/navbar.php';
                     </p>
                 </div>
                 <div>
-                    <a href="<?= e(app_url('/pages/contact.php')); ?>" class="inline-flex items-center gap-3 rounded-xl bg-brand-500 px-6 py-4 text-sm font-bold text-white shadow-lg shadow-brand-500/20 transition hover:-translate-y-0.5 hover:bg-brand-400">
+                    <a href="<?= e(app_url('/pages/contact.php')); ?>" class="site-button site-button--primary">
                         Discuss your project <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
                     </a>
                 </div>
